@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     else
       @category_id = Category.find_by(name: params[:category]).id
       @posts = Post.where(category_id: @category_id).order("created_at DESC")
-      
+
     end
 
   end
@@ -50,7 +50,7 @@ class PostsController < ApplicationController
 private
 
   def post_params
-    params.require(:post).permit(:title, :content, :category_id)
+    params.require(:post).permit(:title, :content, :category_id, :image)
   end
 
   def find_post
