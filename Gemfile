@@ -16,6 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'carrierwave'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'fog'
 
 gem 'bootstrap-sass'
 
